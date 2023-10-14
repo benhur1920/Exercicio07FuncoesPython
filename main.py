@@ -10,7 +10,6 @@ def controladorPrestacao():
     valorPrestacao = entradaDados()
     contador += 1
     valorTotal = valorPrestacao + valorTotal
-    print(contador, valorTotal)
     resposta = coletarResposta()
   impressaoFinal(valorTotal, contador)
     
@@ -47,6 +46,7 @@ def coletarResposta():
 def impressaoFinal(valorTotal, contador):
   print(f'\nO valor total de prestações é R$ {valorTotal}')
   print(f'\nO total de prestações pagas foram {contador}')
+
   
 #Programa Principal
 controladorPrestacao()
